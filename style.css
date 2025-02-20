@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(175, 153, 153);
+    font-family: Tahoma, sans-serif;
+}
+
+
+
+#title2{
+    text-align: center;
+    color: brown;
+}
+
+.title{
+    text-align: center;
+    color: brown;
+    font-size: 50px;
+}
+
+.pictures{
+    display: block;
+    margin: auto;
+    width: 60%;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.subtext{
+    color: brown;
+    font-size: 20px;
+}
+
+.nextbutton{
+    float: right;
+    border-radius: 100%;
+    background-color: rgb(224, 110, 57);
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.previousbutton{
+    float: left;
+    border-radius: 100%;
+    background-color: rgb(224, 110, 57);
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
