@@ -1,13 +1,6 @@
 body{
-    background-color: rgb(175, 153, 153);
+    background-color: #bfaa5a;
     font-family: Tahoma, sans-serif;
-}
-
-
-
-#title2{
-    text-align: center;
-    color: brown;
 }
 
 .title{
@@ -16,39 +9,69 @@ body{
     font-size: 50px;
 }
 
-.pictures{
-    display: block;
-    margin: auto;
-    width: 60%;
-    border-radius: 8px;
-    padding: 5px;
+.secondary-title{
+    text-align: center;
+    color: brown;
+    font-size: 35px;
 }
 
 .subtext{
     color: brown;
     font-size: 20px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
 }
 
-.nextbutton{
-    float: right;
-    border-radius: 100%;
-    background-color: rgb(224, 110, 57);
-    width: 60px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
+.top-nav{
+    overflow: hidden;
+    background-color: #43915c;
+    padding-left: 5px;
+    
+    a{
+        color: white;
+        background-color: #1a2054;
+        padding: 17px 15px;
+        text-decoration: none;
+        float: left;
+    }
+    
+    a:hover{
+        background-color: #4593ba;
+    }
+    
+    a.active{
+       background-color: #5a79a1;
+       color: white;
+    }
+    
 }
 
-.previousbutton{
-    float: left;
-    border-radius: 100%;
-    background-color: rgb(224, 110, 57);
-    width: 90px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
+.pic.in-view{
+    animation: pic-fade 3s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pic-fade{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 50%;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%
+}
+
+.column.in-view{
+    animation: picslide-right 3s;
 }
